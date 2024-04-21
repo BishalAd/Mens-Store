@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MensWare: The Mens Fashion Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -32,54 +38,108 @@
             <div class="bigImage">
                 <img src="Resources\Front Image.jpg" alt="Front Image of the store" id="slideshow-image">
             </div>
+            <div class="Searchsection">
+                <select name="Category" id="Select-Category">
+                    <option value="All">All</option>
+                    <option value="Product">Product</option>
+                    <option value="shoes">Shoes</option>
+                    <option value="cloth">Clothes</option>
+                </select>
+                <input type="text" id="search-item" placeholder="Search for items...">
+                <div class="searchIcon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
             <h1> Popular Products</h1>
             <div class="Popular-section">
                 <div class="box1 box">
                     <div class="box-content">
                         <h2>Shirt</h2>
                         <div class="boxImg" style="background-image: url('Resources/box1_image.jpg');"></div>
-                        <p>See More</p>
-                        <p>See More</p>
+                        <div class="info">
+                            <p>Price: $25<br></p>
+                            <a href="">
+                                <button class="cart-button"> Add To
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="box2 box">
                     <div class="box-content">
                         <h2>Face Wash</h2>
                         <div class="boxImg" style="background-image: url('Resources/Product1.png');"></div>
-                        <p>See More</p>
+                        <div class="info">
+                            <p>Price: $25<br></p>
+                            <a href="">
+                                <button class="cart-button"> Add To
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="box3 box">
                     <div class="box-content">
                         <h2>Jeans</h2>
                         <div class="boxImg" style="background-image: url('Resources/Product2.png');"></div>
-                        <p>See More</p>
+                        <div class="info">
+                            <p>Price: $25<br></p>
+                            <a href="">
+                                <button class="cart-button"> Add To
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="box4 box">
                     <div class="box-content">
                         <h2>Trimmer</h2>
                         <div class="boxImg" style="background-image: url('Resources/Product3.png');"></div>
-                        <p>See More</p>
+                        <div class="info">
+                            <p>Price: $25<br></p>
+                            <a href="">
+                                <button class="cart-button"> Add To
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="box1 box">
                     <div class="box-content">
                         <h2>Hair And Beard Wax</h2>
                         <div class="boxImg" style="background-image: url('Resources/product4.png');"></div>
-                        <p>See More</p>
+                        <div class="info">
+                            <p>Price: $25<br></p>
+                            <a href="">
+                                <button class="cart-button"> Add To
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="box2 box">
                     <div class="box-content">
                         <h2>Shoes</h2>
                         <div class="boxImg" style="background-image: url('Resources/product5.png');"></div>
-                        <p>See More</p>
+                        <div class="info">
+                            <p>Price: $25<br></p>
+                            <a href="">
+                                <button class="cart-button"> Add To
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
-        </div>
+
+            </div>
     </main>
     <script src="script.js"></script>
 </body>
-</html>
+
+</html> 

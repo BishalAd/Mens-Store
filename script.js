@@ -10,9 +10,7 @@ let currentImageIndex = 0; // Index of the current image
 
         const imageElement = document.getElementById('slideshow-image');
 
-        // Function to change the image
         function changeImage() {
-            // Set the image source
             imageElement.src = images[currentImageIndex];
             // Fade in the image
             imageElement.style.opacity = 0;

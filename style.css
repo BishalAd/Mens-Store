@@ -57,7 +57,8 @@
 
 .bigImage img{
     object-fit: cover;
-    object-position: top;
+    /* object-position: top; */
+    object-position: center;
     height: 80vh;
     width: 100%;
 }
@@ -72,11 +73,54 @@
     text-decoration: underline;
 }
 
-.Popular-section{
+.Searchsection{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: -40px 0px 100px 0px;
+}
+
+#Select-Category{
+    width: 7%;
+    height: 10vh;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#Select-Category option{
+    cursor: pointer;
+}
+
+.searchIcon{
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 25px;
+    width: 5%;
+    color: white;
+    background-color: black;
+}
+.searchIcon i{
+    justify-content: center;
+    margin: 20px;
+}
+
+#search-item{
+    width: 25%;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+.Popular-section {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(385px, 1fr));
 }
+
 
 .box{
     height: 500px;
@@ -100,8 +144,33 @@
 .box-content p{
     color: #007185;
 }
+.info{
+    justify-content: space-around;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
 
+.info i{
+    font-size: 20px;
+}
 
+.info button{
+    margin: -10px -20px 0px 15px;
+    color: white;
+    background-color: black;
+    align-items: end;
+    height: 2rem;
+    width: 8em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.info p{
+    text-align: left;
+    font-weight: 600;
+}
 /* 
 @media (max-width: 550px) {
     .Main-Nav-Section{
